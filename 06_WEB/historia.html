@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia — LIMINAL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ambient-bg"></div>
+
+  <!-- Background parallax depth layers -->
+  <div class="bg-parallax-layer bg-parallax-layer--fog" data-speed="0.06"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--vortex" data-speed="0.12"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--lava" data-speed="0.18"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--glitch" data-speed="0"></div>
+
+  <header class="header visible scrolled" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">FRAGMENTS</a>
+      <div class="header__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="header__nav" id="nav-menu">
+        <li><a href="index.html#concepto">Concepto</a></li>
+        <li><a href="mundo.html">Mundo</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="index.html#personajes">Personajes</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="subpage-hero">
+
+    <div class="subpage-hero__content">
+      <p class="section__label glitch-flicker">El Trauma</p>
+      <h1 class="section__title glitch glitch--hard glitch-shadow" style="margin-bottom:0;" data-text="La Historia">La
+        Historia</h1>
+    </div>
+  </section>
+
+  <main class="subpage-content">
+    <div class="subpage-content__inner reveal"> <a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+        Volver al inicio
+      </a>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="Amnesia y Disociación">Amnesia y Disociación</h2>
+      <p>
+        El inicio de la historia nos sitúa en plena caída. El Sujeto despierta sin recuerdos, completamente desorientado
+        en un entorno que resulta perturbadoramente familiar. La historia no se expone a través de largos diálogos, sino
+        que se descubre orgánicamente a través del entorno, la arquitectura hostil y los mensajes de un teléfono roto.
+      </p>
+
+      <div class="char-quote">
+        <p>No sé quién soy. Pero este lugar me conoce a mí.</p>
+        <cite>— El Sujeto, nivel 1</cite>
+      </div>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="El Experimento">El Experimento</h2>
+      <p>
+        Poco a poco, las piezas comienzan a encajar. Años atrás, el hospital de la ciudad llevó a cabo un oscuro
+        proyecto: buscar sujetos jóvenes cuyas mentes fueran manipulables para intentar controlar el inconsciente
+        colectivo. El Sujeto y su amiga más cercana fueron elegidas, e incluso vendidas por sus propias familias para
+        participar a cambio de inmunidad.
+      </p>
+
+      <div class="callout">
+        <p>Registro clasificado nº 047-B: "Los sujetos seleccionados muestran una permeabilidad inusual entre estados
+          conscientes y subconscientes. La fusión de planos es posible. El coste humano es aceptable."</p>
+      </div>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="La Noche Más Oscura">La Noche Más Oscura</h2>
+      <p>
+        La tragedia culminó cuando el experimento rompió el umbral entre lo real y lo psíquico. La amiga del Sujeto
+        desapareció, consumida por el plano inconsciente. El jugador debe afrontar las consecuencias de aquella noche:
+        una culpa insoportable y una moralidad gris.
+      </p>
+
+      <div class="char-quote">
+        <p>Lejos de ser la heroína, la protagonista fue el desencadenante de todo.</p>
+        <cite>— Documento médico, expediente 003</cite>
+      </div>
+
+      <!-- Timeline de eventos como data readout -->
+      <div class="data-readout" style="margin-top: 3rem;">
+        <div class="data-readout__item">
+          <span class="data-readout__label">Fase I</span>
+          <span class="data-readout__value"
+            style="font-size:1rem; font-family:var(--font-display); font-style:italic;">Reclutamiento</span>
+        </div>
+        <div class="data-readout__item">
+          <span class="data-readout__label">Fase II</span>
+          <span class="data-readout__value"
+            style="font-size:1rem; font-family:var(--font-display); font-style:italic; color:var(--clr-blue);">Experimento</span>
+        </div>
+        <div class="data-readout__item">
+          <span class="data-readout__label">Fase III</span>
+          <span class="data-readout__value"
+            style="font-size:1rem; font-family:var(--font-display); font-style:italic; color:var(--clr-red);">La
+            Fractura</span>
+        </div>
+        <div class="data-readout__item">
+          <span class="data-readout__label">Ahora</span>
+          <span class="data-readout__value"
+            style="font-size:1rem; font-family:var(--font-display); font-style:italic; color:rgba(242,240,235,0.3);">???</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 LIMINAL — Todos los derechos reservados. Proyecto TFG.</p>
+  </footer>
+
+
+  <!-- ============================================================
+       FOREGROUND PARALLAX LAYERS — historia.html
+  ============================================================ -->
+  <div class="fg-layer fg-layer--placeholder" data-speed="-0.3" data-x="0vw" data-y="45vh"
+    data-size="clamp(150px,17vw,260px)" data-opacity="0.45" data-blend="screen"
+    data-label="Efecto izquierda&#xA;historia">
+    <!-- <img src="img/fg-distortion-left.png" alt=""> -->
+  </div>
+  <div class="fg-layer fg-layer--placeholder" data-speed="0.2" data-x="calc(100vw - clamp(150px,19vw,280px) - 1vw)"
+    data-y="65vh" data-size="clamp(150px,19vw,280px)" data-opacity="0.35" data-blend="screen"
+    data-label="Efecto derecha&#xA;historia">
+    <!-- <img src="img/fg-pulse-right.png" alt=""> -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

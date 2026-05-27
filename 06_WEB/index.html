@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Una joven queda atrapada en una versión distorsionada de su ciudad natal, donde la realidad se moldea a partir de lo reprimido. Terror psicológico, puzle, exploración.">
+  <title>FRAGMENTS — El Inconsciente Se Vuelve Real</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Background -->
+  <div class="ambient-bg"></div>
+
+  <!-- Background parallax depth layers -->
+  <div class="bg-parallax-layer bg-parallax-layer--fog" data-speed="0.06"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--vortex" data-speed="0.12"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--lava" data-speed="0.18"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--glitch" data-speed="0"></div>
+
+  <!-- ==============================
+       HERO — FULL SCREEN
+       ============================== -->
+  <section class="hero" id="hero">
+    <div class="hero__media">
+      <img src="hero.png" alt="LIMINAL — Ciudad corrompida"
+        style="width:100%;height:100%;object-fit:cover;object-position:center 60%;opacity:0.55;filter:saturate(0.7) contrast(1.1);">
+      <!-- Reemplaza con <img src="img/hero.jpg"> o <video> cuando tengas el asset -->
+    </div>
+
+    <div class="hero__particles" id="hero-particles"></div>
+
+    <div class="hero__content">
+      <h1 class="hero__title glitch glitch--hard glitch-shadow" data-text="LIMINAL">FRAGMENTS</h1>
+      <p class="hero__subtitle glitch glitch--soft glitch-flicker" data-text="Donde el inconsciente se vuelve real">
+        Donde el inconsciente se vuelve real</p>
+    </div>
+
+    <div class="hero__scroll-indicator" id="scroll-indicator">
+      <span></span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       HEADER / NAV
+       ============================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo">FRAGMENTS</a>
+
+      <div class="header__hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="header__nav" id="nav-menu">
+        <li><a href="#concepto">Concepto</a></li>
+        <li><a href="mundo.html">Mundo</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="#personajes">Personajes</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==============================
+       SYNOPSIS
+       ============================== -->
+  <section class="section synopsis" id="sinopsis">
+
+    <div class="section__container reveal">
+      <p class="section__label">Sinopsis</p>
+      <h2 class="section__title">El Inconsciente No Perdona</h2>
+      <div class="section__divider"></div>
+      <p class="synopsis__text">
+        Una joven queda atrapada en una versión distorsionada de su ciudad natal,
+        donde la realidad se moldea a partir de lo reprimido. Los recuerdos se
+        convierten en monstruos, los miedos toman forma y las personas que la rodean
+        van cediendo ante la corrupción. Enfrentarse a ese mundo significará decidir
+        si seguir fragmentándose… o aceptarse por completo.
+      </p>
+      <div class="data-readout" style="margin-top:3rem; justify-content:center;">
+        <div class="data-readout__item"><span class="data-readout__label">Sujetos</span><span
+            class="data-readout__value data-readout__value--red">01</span></div>
+        <div class="data-readout__item"><span class="data-readout__label">Planos activos</span><span
+            class="data-readout__value">02</span></div>
+        <div class="data-readout__item"><span class="data-readout__label">??</span><span
+            class="data-readout__value data-readout__value--blue">03</span></div>
+        <div class="data-readout__item"><span class="data-readout__label">Cordura</span><span
+            class="data-readout__value data-readout__value--red">??</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CONCEPTO
+       ============================== -->
+  <section class="section" id="concepto">
+    <div class="section__container">
+      <p class="section__label reveal glitch-flicker">Concepto</p>
+      <h2 class="section__title reveal glitch-shadow glitch-flicker" data-text="Los Pilares del Juego">Los Pilares del
+        Juego</h2>
+      <div class="section__divider reveal"></div>
+
+      <div class="concept__grid">
+
+        <!-- El Mundo -->
+        <div class="concept-card reveal reveal-delay-1">
+          <div class="concept-card__icon concept-card__icon--mundo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <h3 class="concept-card__title">El Mundo</h3>
+          <p class="concept-card__desc">
+            La ciudad existe en dos planos simultáneos: el consciente y el inconsciente colectivo.
+            Siguiendo las teorías de Jung, lo reprimido no desaparece, sino que se acumula hasta
+            volverse real. Cuando ambos planos se fusionan, la arquitectura se corrompe, los espacios
+            se distorsionan y los habitantes pierden la razón. El pueblo no es solo el escenario;
+            es el reflejo de todo aquello que nadie ha querido recordar.
+          </p>
+          <a href="mundo.html" class="concept-card__link">
+            Explorar más
+          </a>
+        </div>
+
+        <!-- Exploración -->
+        <div class="concept-card reveal reveal-delay-2">
+          <div class="concept-card__icon concept-card__icon--exploracion">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11" />
+            </svg>
+          </div>
+          <h3 class="concept-card__title">Exploración</h3>
+          <p class="concept-card__desc">
+            El juego propone una exploración pausada y tensa. La prioridad nunca es el combate
+            sino la huida, la observación y el descubrimiento. Cada zona —el barrio residencial,
+            la casa familiar, el bosque, el hospital— esconde documentos, objetos y fragmentos
+            de memoria que reconstruyen la verdad poco a poco. El teléfono de Alice actúa
+            como guía críptica; sus mensajes se corrompen cuanto más profunda es la distorsión.
+          </p>
+          <a href="exploracion.html" class="concept-card__link">
+            Explorar más
+          </a>
+        </div>
+
+        <!-- Mecánicas -->
+        <div class="concept-card reveal reveal-delay-3">
+          <div class="concept-card__icon concept-card__icon--mecanicas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 20V10" />
+              <path d="M18 20V4" />
+              <path d="M6 20v-4" />
+            </svg>
+          </div>
+          <h3 class="concept-card__title">Mecánicas</h3>
+          <p class="concept-card__desc">
+            La cordura, la percepción, la concentración y la fuerza mental del personaje son valores
+            que evolucionan según las decisiones del jugador. Una cordura baja distorsiona la
+            imagen en pantalla y complica el movimiento. La mecánica de corrupción altera el
+            entorno en tiempo real. Las elecciones de diálogo y el estado mental
+            determinan qué zonas son accesibles y cuál de los tres finales se alcanzará.
+          </p>
+          <a href="mecanicas.html" class="concept-card__link">
+            Explorar más
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       PERSONAJES
+       ============================== -->
+  <section class="section characters" id="personajes">
+    <div class="section__container">
+      <p class="section__label reveal glitch-flicker">Personajes</p>
+      <h2 class="section__title reveal glitch-shadow glitch-flicker" data-text="Sombras con Nombre Propio">Sombras con
+        Nombre Propio</h2>
+      <div class="section__divider reveal"></div>
+
+      <div class="carousel reveal" id="carousel">
+        <div class="carousel__viewport" id="carousel-track">
+
+          <!-- Personaje 1 -->
+          <div class="carousel__slide active">
+            <div class="carousel__image-layer">
+              <div class="carousel__image-placeholder char-placeholder-1">
+                <span>Imagen del personaje</span>
+              </div>
+            </div>
+            <div class="carousel__info-layer">
+              <p class="carousel__char-role">Alice</p>
+              <h3 class="carousel__char-name">El Sujeto</h3>
+              <p class="carousel__char-desc">
+                Despierta en una versión corrompida de su ciudad sin recordar cómo llegó hasta allí.
+                Moralmente ambigua, la empatía inicial se va erosionando conforme afloran
+                verdades incómodas sobre su pasado. Fue elegida como sujeto de experimento junto a su
+                amiga, y fue incapaz de salvarla. Esa culpa —nunca resuelta— es el motor de todo
+                lo que está ocurriendo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Personaje 2 -->
+          <div class="carousel__slide">
+            <div class="carousel__image-layer">
+              <div class="carousel__image-placeholder char-placeholder-2">
+                <span>Imagen del personaje</span>
+              </div>
+            </div>
+            <div class="carousel__info-layer">
+              <p class="carousel__char-role">El Alter Ego</p>
+              <h3 class="carousel__char-name">La Sombra</h3>
+              <p class="carousel__char-desc">
+                La proyección emergida del inconsciente colectivo. Representa todo
+                lo que la protagonista ha reprimido, negado y enterrado bajo capas de
+                normalidad. No miente; solo dice lo que nadie quiere admitirse a sí mismo.
+                Enfrentarse a ella es enfrentarse al único espejo que no distorsiona.
+              </p>
+            </div>
+          </div>
+
+          <!-- Personaje 3 -->
+          <div class="carousel__slide">
+            <div class="carousel__image-layer">
+              <div class="carousel__image-placeholder char-placeholder-3">
+                <span>Imagen del personaje</span>
+              </div>
+            </div>
+            <div class="carousel__info-layer">
+              <p class="carousel__char-role">X</p>
+              <h3 class="carousel__char-name">El Ancla</h3>
+              <p class="carousel__char-desc">
+                Mejor amiga de Alice
+              </p>
+            </div>
+          </div>
+
+          <!-- Personaje 4 -->
+          <div class="carousel__slide">
+            <div class="carousel__image-layer">
+              <div class="carousel__image-placeholder char-placeholder-4">
+                <span>Imagen del personaje</span>
+              </div>
+            </div>
+            <div class="carousel__info-layer">
+              <p class="carousel__char-role">Y</p>
+              <h3 class="carousel__char-name">El Resentimiento</h3>
+              <p class="carousel__char-desc">
+                Mejor amigo de Alice
+              </p>
+            </div>
+          </div>
+
+          <!-- Personaje 5 -->
+          <div class="carousel__slide">
+            <div class="carousel__image-layer">
+              <div class="carousel__image-placeholder char-placeholder-3">
+                <span>Imagen del personaje</span>
+              </div>
+            </div>
+            <div class="carousel__info-layer">
+              <p class="carousel__char-role">Z</p>
+              <h3 class="carousel__char-name">El Resentimiento</h3>
+              <p class="carousel__char-desc">
+                Mejor amigo de Alice
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="carousel__controls">
+          <button class="carousel__btn" id="carousel-prev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
+
+          <div class="carousel__dots" id="carousel-dots">
+            <button class="carousel__dot active" data-index="0" aria-label="Protagonista"></button>
+            <button class="carousel__dot" data-index="1" aria-label="La Sombra"></button>
+            <button class="carousel__dot" data-index="2" aria-label="El Ancla"></button>
+            <button class="carousel__dot" data-index="3" aria-label="El Resentimiento"></button>
+            <button class="carousel__dot" data-index="4" aria-label="El Resentimiento"></button>
+          </div>
+
+          <button class="carousel__btn" id="carousel-next" aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       GAMEPLAY
+       ============================== -->
+  <section class="section gameplay" id="gameplay">
+    <div class="section__container">
+      <div class="deco-img deco-img--float deco-img--placeholder deco-img--tint-blue deco-img--subtle"
+        data-parallax="0.18" data-label="Efecto flotante&#10;gameplay 2"
+        style="position: absolute; right: -40px; bottom: 10%; width: 200px;">
+        <!-- <img src="img/decor-haze-right.png" alt=""> -->
+      </div>
+      <p class="section__label reveal glitch-flicker">Gameplay</p>
+      <h2 class="section__title reveal glitch-shadow glitch-flicker" data-text="Supervivencia del Inconsciente">
+        Supervivencia del Inconsciente</h2>
+      <div class="section__divider reveal" style="margin-left:auto; margin-right:auto;"></div>
+
+      <div class="gameplay__video-container reveal">
+        <div class="gameplay__video-placeholder">
+          <div class="gameplay__play-btn" aria-label="Reproducir vídeo">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+          </div>
+          <span class="gameplay__video-label">Próximamente — Trailer</span>
+        </div>
+      </div>
+
+      <div class="gameplay__features reveal">
+        <div class="gameplay__feature">
+          <h4 class="gameplay__feature-title">Cordura y Corrupción</h4>
+          <p class="gameplay__feature-desc">
+            La cordura de Alice afecta la visión, el movimiento y las opciones disponibles.
+            Cuanto más se corrompe el entorno, más difícil resulta distinguir lo real de lo imaginado.
+          </p>
+        </div>
+        <div class="gameplay__feature">
+          <h4 class="gameplay__feature-title">El Teléfono</h4>
+          <p class="gameplay__feature-desc">
+            Un móvil actúa como guía críptica durante toda la historia. En las zonas
+            más distorsionadas, los mensajes llegan corruptos, con información incompleta
+            o contradictoria.
+          </p>
+        </div>
+        <div class="gameplay__feature">
+          <h4 class="gameplay__feature-title">Las decisiones importan</h4>
+          <p class="gameplay__feature-desc">
+            Las decisiones a lo largo del juego determinan no solo el destino de Alice, sino de todo el pueblo
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+       ============================== -->
+  <footer class="footer">
+    <p>&copy; 2026 FRAGMENTS — Todos los derechos reservados. Proyecto TFG.</p>
+  </footer>
+
+
+  <!-- ============================================================
+       FOREGROUND PARALLAX LAYERS — index.html
+       Reemplaza el comentario <img> por tu imagen real cuando la tengas.
+       Borra la clase fg-layer--placeholder al añadir la imagen.
+  ============================================================ -->
+
+  <!-- Efecto izquierda: flota hacia arriba al bajar -->
+  <div class="fg-layer fg-layer--placeholder" data-speed="-0.25" data-x="2vw" data-y="60vh"
+    data-size="clamp(160px,18vw,280px)" data-opacity="0.45" data-blend="screen"
+    data-label="Efecto izquierda&#xA;(PNG transparente)">
+    <!-- <img src="img/fg-smoke-left.png" alt=""> -->
+  </div>
+
+  <!-- Efecto derecha: desciende lento, casi estático -->
+  <div class="fg-layer fg-layer--placeholder" data-speed="0.15" data-x="calc(100vw - clamp(160px,20vw,300px) - 2vw)"
+    data-y="40vh" data-size="clamp(160px,20vw,300px)" data-opacity="0.4" data-blend="screen"
+    data-label="Efecto derecha&#xA;(PNG transparente)">
+    <!-- <img src="img/fg-glow-right.png" alt=""> -->
+  </div>
+
+  <!-- Efecto central rápido: baja notablemente al hacer scroll -->
+  <div class="fg-layer fg-layer--placeholder" data-speed="0.55" data-x="calc(50vw - 100px)" data-y="-5vh"
+    data-size="clamp(140px,16vw,220px)" data-opacity="0.3" data-blend="screen"
+    data-label="Efecto central&#xA;(PNG transparente)">
+    <!-- <img src="img/fg-vortex-top.png" alt=""> -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

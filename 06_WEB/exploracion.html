@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploración — LIMINAL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ambient-bg"></div>
+
+  <!-- Background parallax depth layers -->
+  <div class="bg-parallax-layer bg-parallax-layer--fog" data-speed="0.06"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--vortex" data-speed="0.12"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--lava" data-speed="0.18"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--glitch" data-speed="0"></div>
+
+  <header class="header visible scrolled" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">FRAGMENTS</a>
+      <div class="header__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="header__nav" id="nav-menu">
+        <li><a href="index.html#concepto">Concepto</a></li>
+        <li><a href="mundo.html">Mundo</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="index.html#personajes">Personajes</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="subpage-hero">
+    <div class="subpage-hero__content">
+      <p class="section__label glitch-flicker">El Ritmo</p>
+      <h1 class="section__title glitch glitch--hard glitch-shadow" style="margin-bottom:0;" data-text="Exploración">
+        Exploración</h1>
+    </div>
+  </section>
+
+  <main class="subpage-content">
+    <div class="subpage-content__inner reveal"> <a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+        Volver al inicio
+      </a>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="Observar antes de actuar">Observar antes de actuar</h2>
+      <p>
+        El diseño de LIMINAL fomenta una exploración pausada y metódica. Inspirado en clásicos del terror psicológico,
+        el combate es escaso, torpe y angustioso. No eres un héroe; la prioridad es huir, esconderte y entender tu
+        entorno.
+      </p>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="El Móvil como Guía">El Móvil como Guía</h2>
+      <p>
+        La única conexión con la "realidad" es un teléfono móvil que recibe mensajes crípticos. Te avisa de peligros y
+        te indica el camino. A medida que desciendes en el inconsciente, la señal se corrompe.
+      </p>
+
+      <!-- PHONE MOCKUP -->
+      <div class="phone-mockup">
+        <div class="phone-signal">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="phone-msg">
+          No vayas al hospital. Hay algo esperándote allí que no es lo que recuerdas.
+        </div>
+        <div class="phone-msg phone-msg--corrupted">
+          N0 v4y4s &nbsp; al h0spit&hellip; &nbsp; ████ &nbsp; qu3 n0 &nbsp; r3cu3rdas.
+        </div>
+        <div class="phone-msg phone-msg--corrupted" style="opacity:0.4; font-size:0.58rem;">
+          &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;
+        </div>
+      </div>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="Secretos del Inconsciente">Secretos del Inconsciente</h2>
+      <p>
+        El mundo no es abierto, pero está lleno de pasajes cerrados, documentos médicos, cartas perdidas y minijuegos
+        ocultos. Explorar a fondo es la única manera de reconstruir la amnesia de la protagonista y comprender la
+        verdadera magnitud del experimento al que fue sometida.
+      </p>
+
+      <!-- Location tags -->
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem;">
+        <span class="location-tag">Barrio Residencial</span>
+        <span class="location-tag">Casa Familiar</span>
+        <span class="location-tag">Bosque Norte</span>
+        <span class="location-tag">Hospital Central</span>
+        <span class="location-tag">Ala Psiquiátrica</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 LIMINAL — Todos los derechos reservados. Proyecto TFG.</p>
+  </footer>
+
+
+  <!-- ============================================================
+       FOREGROUND PARALLAX LAYERS — exploracion.html
+  ============================================================ -->
+  <div class="fg-layer fg-layer--placeholder" data-speed="-0.22" data-x="1vw" data-y="55vh"
+    data-size="clamp(130px,15vw,220px)" data-opacity="0.4" data-blend="screen"
+    data-label="Efecto izquierda&#xA;exploración">
+    <!-- <img src="img/fg-signal-left.png" alt=""> -->
+  </div>
+  <div class="fg-layer fg-layer--placeholder" data-speed="0.35" data-x="calc(100vw - clamp(130px,17vw,250px) - 1vw)"
+    data-y="25vh" data-size="clamp(130px,17vw,250px)" data-opacity="0.35" data-blend="screen"
+    data-label="Efecto derecha&#xA;exploración">
+    <!-- <img src="img/fg-corrupt-right.png" alt=""> -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

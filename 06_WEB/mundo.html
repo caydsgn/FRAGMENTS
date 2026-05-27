@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo — LIMINAL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ambient-bg"></div>
+
+  <!-- Background parallax depth layers -->
+  <div class="bg-parallax-layer bg-parallax-layer--fog" data-speed="0.06"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--vortex" data-speed="0.12"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--lava" data-speed="0.18"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--glitch" data-speed="0"></div>
+
+  <header class="header visible scrolled" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">FRAGMENTS</a>
+      <div class="header__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="header__nav" id="nav-menu">
+        <li><a href="index.html#concepto">Concepto</a></li>
+        <li><a href="mundo.html">Mundo</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="index.html#personajes">Personajes</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="subpage-hero">
+
+    <div class="subpage-hero__content">
+      <p class="section__label glitch-flicker">El Entorno</p>
+      <h1 class="section__title glitch glitch--hard glitch-shadow" style="margin-bottom:0;" data-text="El Mundo">El
+        Mundo</h1>
+    </div>
+  </section>
+
+  <main class="subpage-content">
+    <div class="subpage-content__inner reveal"> <a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+        Volver al inicio
+      </a>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="Dos Planos de la Realidad">Dos Planos de la Realidad</h2>
+      <p>
+        En LIMINAL, la ciudad existe simultáneamente en dos planos. El plano consciente es el mundo tal y como lo
+        conocemos —silencioso, vacío, opresivo—. El plano inconsciente es donde la gravedad se invierte, la arquitectura
+        se retuerce formando laberintos imposibles y las sombras toman forma física.
+      </p>
+
+      <!-- Toggle decorativo de planos -->
+      <div class="plane-toggle">
+        <button class="plane-toggle__btn plane-toggle__btn--active">Plano Consciente</button>
+        <button class="plane-toggle__btn">Plano Inconsciente</button>
+      </div>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="La Fusión">La Fusión</h2>
+      <p>
+        Siguiendo los conceptos del inconsciente colectivo de Carl Jung, los reprimidos de la ciudad no han
+        desaparecido: se han acumulado. Un experimento fallido en el hospital local provocó una fractura que fusionó
+        ambos planos. Ahora, los miedos, la disonancia cognitiva y los traumas de los habitantes alteran físicamente el
+        entorno.
+      </p>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="Zonas Principales">Zonas Principales</h2>
+      <p>El viaje obligará a cruzar zonas reconocibles pero irrevocablemente corrompidas.</p>
+
+      <!-- ZONE GRID -->
+      <div class="zone-grid">
+        <div class="zone-card" data-index="01">
+          <div class="zone-card__status"></div>
+          <div class="zone-card__name">El Instituto</div>
+          <div class="zone-card__desc">Las normas y el control se vuelven jaulas literales. Los pasillos se extienden
+            infinitamente.</div>
+        </div>
+        <div class="zone-card" data-index="02">
+          <div class="zone-card__status zone-card__status--corrupted"></div>
+          <div class="zone-card__name">Metro Subterráneo</div>
+          <div class="zone-card__desc">Laberinto de andenes imposibles. El sonido de los trenes llega de todas
+            direcciones a la vez.</div>
+        </div>
+        <div class="zone-card" data-index="03">
+          <div class="zone-card__status"></div>
+          <div class="zone-card__name">El Bosque</div>
+          <div class="zone-card__desc">Cabaña aislada donde el tiempo no avanza. La niebla oculta formas que no deberían
+            existir.</div>
+        </div>
+        <div class="zone-card" data-index="04">
+          <div class="zone-card__status zone-card__status--corrupted"></div>
+          <div class="zone-card__name">Hospital &amp; Psiquiátrico</div>
+          <div class="zone-card__desc">El núcleo de todo. Epicentro del experimento y origen de la fractura entre los
+            dos planos.</div>
+        </div>
+      </div>
+
+      <!-- Data readout de estado de zonas -->
+      <div class="data-readout">
+        <div class="data-readout__item">
+          <span class="data-readout__label">Zonas activas</span>
+          <span class="data-readout__value">04</span>
+        </div>
+        <div class="data-readout__item">
+          <span class="data-readout__label">Corrupción</span>
+          <span class="data-readout__value data-readout__value--red">68%</span>
+        </div>
+        <div class="data-readout__item">
+          <span class="data-readout__label">Epicentro</span>
+          <span class="data-readout__value data-readout__value--blue">Hospital</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 LIMINAL — Todos los derechos reservados. Proyecto TFG.</p>
+  </footer>
+
+
+  <!-- ============================================================
+       FOREGROUND PARALLAX LAYERS — mundo.html
+  ============================================================ -->
+  <div class="fg-layer fg-layer--placeholder" data-speed="-0.2" data-x="1vw" data-y="50vh"
+    data-size="clamp(140px,16vw,240px)" data-opacity="0.4" data-blend="screen" data-label="Efecto izquierda&#xA;mundo">
+    <!-- <img src="img/fg-fog-left.png" alt=""> -->
+  </div>
+  <div class="fg-layer fg-layer--placeholder" data-speed="0.3" data-x="calc(100vw - clamp(140px,18vw,260px) - 1vw)"
+    data-y="30vh" data-size="clamp(140px,18vw,260px)" data-opacity="0.35" data-blend="screen"
+    data-label="Efecto derecha&#xA;mundo">
+    <!-- <img src="img/fg-ember-right.png" alt=""> -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+

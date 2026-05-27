@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mecánicas — LIMINAL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ambient-bg"></div>
+
+  <!-- Background parallax depth layers -->
+  <div class="bg-parallax-layer bg-parallax-layer--fog" data-speed="0.06"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--vortex" data-speed="0.12"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--lava" data-speed="0.18"></div>
+  <div class="bg-parallax-layer bg-parallax-layer--glitch" data-speed="0"></div>
+
+  <header class="header visible scrolled" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">FRAGMENTS</a>
+      <div class="header__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="header__nav" id="nav-menu">
+        <li><a href="index.html#concepto">Concepto</a></li>
+        <li><a href="mundo.html">Mundo</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="index.html#personajes">Personajes</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="subpage-hero">
+    <div class="subpage-hero__content">
+      <p class="section__label glitch-flicker">El Sistema</p>
+      <h1 class="section__title glitch glitch--hard glitch-shadow" style="margin-bottom:0;" data-text="Mecánicas">
+        Mecánicas</h1>
+    </div>
+  </section>
+
+  <main class="subpage-content">
+    <div class="subpage-content__inner reveal"> <a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+        Volver al inicio
+      </a>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="La Fragilidad de la Mente">La Fragilidad de la Mente</h2>
+      <p>
+        El sistema de progresión de LIMINAL no se basa en subir de nivel o conseguir mejores armas, sino en gestionar
+        los estados mentales del Sujeto. Cuatro valores fluctúan según lo que descubres, cómo interactúas con los miedos
+        proyectados y qué decisiones tomas.
+      </p>
+
+      <!-- STAT BARS — valores del personaje -->
+      <div class="stat-bars">
+        <div class="stat-bar">
+          <div class="stat-bar__header">
+            <span class="stat-bar__name">Cordura</span>
+            <span class="stat-bar__value">62%</span>
+          </div>
+          <div class="stat-bar__track">
+            <div class="stat-bar__fill" style="width: 62%;"></div>
+          </div>
+        </div>
+        <div class="stat-bar">
+          <div class="stat-bar__header">
+            <span class="stat-bar__name">Percepción</span>
+            <span class="stat-bar__value">45%</span>
+          </div>
+          <div class="stat-bar__track">
+            <div class="stat-bar__fill" style="width: 45%;"></div>
+          </div>
+        </div>
+        <div class="stat-bar">
+          <div class="stat-bar__header">
+            <span class="stat-bar__name">Concentración</span>
+            <span class="stat-bar__value">78%</span>
+          </div>
+          <div class="stat-bar__track">
+            <div class="stat-bar__fill" style="width: 78%;"></div>
+          </div>
+        </div>
+        <div class="stat-bar">
+          <div class="stat-bar__header">
+            <span class="stat-bar__name">Fuerza Mental</span>
+            <span class="stat-bar__value">31%</span>
+          </div>
+          <div class="stat-bar__track">
+            <div class="stat-bar__fill" style="width: 31%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="glitch-shadow glitch-flicker" data-text="Mecánica de Corrupción">Mecánica de Corrupción</h2>
+      <p>
+        A medida que la corrupción avanza, el mundo cambia en tiempo real. Si la cordura del Sujeto es baja, la interfaz
+        se distorsiona, el combate y el movimiento se vuelven pesados —simulando la falta de control motor inducida por
+        el trauma— y los enemigos asumen formas más abstractas y perturbadoras.
+      </p>
+
+      <div class="callout">
+        <p>Alerta: nivel de corrupción crítico detectado en zona hospitalaria. La arquitectura del entorno está siendo
+          alterada activamente. Se recomienda no permanecer inmóvil.</p>
+      </div>
+
+      <h2 class="glitch-shadow glitch-flicker text-corrupted" data-text="D̵e̶c̶i̸s̶i̶o̸n̷e̵s̶ ̵y̶ ̶F̴i̵n̶a̷l̴e̸s̶">
+        D̵e̶c̶i̸s̶i̶o̸n̷e̵s̶ ̵y̶ ̶F̴i̵n̶a̷l̴e̸s̶</h2>
+      <p class="text-corrupted">
+        L̵a̸s̶ ̶o̷p̸c̴i̴o̷n̸e̶s̵ ̶d̴e̷ ̵d̶i̷á̷l̶o̵g̵o̵ ̷y̶ ̴l̷o̴s̶ ̴c̷a̴m̴i̸n̵o̶s̴ ̵a̶c̴c̷e̴s̵i̶b̸l̴e̷s̶ ̷e̷s̶t̷á̵n̸
+        ̴l̸i̷g̶a̵d̸o̷s̵ ̶a̸ ̵t̷u̷ ̸e̶s̴t̶a̸d̶o̵ ̷m̶e̷n̸t̵a̷l̶.̴ ̶E̴n̷f̶r̵e̷n̶t̶a̵r̸s̶e̸ ̸a̶l̸ ̶a̸l̶t̵e̶r̷ ̵e̶g̶o̷
+        ̸"̵L̸a̷ ̴S̴o̷m̴b̵r̴a̸"̵ ̴s̶i̸n̵ ̵l̴a̵ ̷p̸e̸r̵c̷e̵p̴c̶i̸ó̶n̸ ̷a̶d̸e̵c̵u̵a̴d̵a̶ ̵t̵e̷ ̴o̵c̷u̴l̸t̵a̸r̵á̴
+        ̴v̸e̴r̷d̶a̴d̴e̶s̵ ̷v̷i̵t̴a̶l̶e̶s̸.̵ ̴T̶o̸d̸o̸ ̴e̵l̴ ̴c̴o̵n̸j̴u̵n̸t̸o̶ ̷d̷e̷ ̷d̵e̸c̶i̸s̴i̴o̷n̵e̶s̴
+        ̵c̷u̷l̶m̸i̶n̴a̸r̸á̶ ̴e̶n̴ ̸u̴n̴o̸ ̶d̸e̶ ̶t̷r̵e̴s̸ ̶f̵i̶n̶a̷l̶e̵s̶.
+      </p>
+
+      <!-- DATA READOUT de finales -->
+      <div class="data-readout">
+        <div class="data-readout__item">
+          <span class="data-readout__label text-corrupted">F̷i̶n̸a̴l̸ ̶I̸</span>
+          <span class="data-readout__value text-corrupted"
+            style="font-size:1.2rem; font-family:var(--font-display); font-style:italic;">A̶̓͝c̵͐͘e̵̿̾p̶̾̅t̷̀̍a̵̒̅c̸̾̿ḯ̷̿ó̵͑̅n̴̋͠</span>
+        </div>
+        <div class="data-readout__item">
+          <span class="data-readout__label text-corrupted">F̵i̷n̴a̴l̶ ̵I̷I̸</span>
+          <span class="data-readout__value text-corrupted"
+            style="font-size:1.2rem; font-family:var(--font-display); font-style:italic; color:var(--clr-blue);">Ŝ̵͌a̷̅͝c̶̒͝r̵̈́̀i̶͐͠f̶̾̏i̴̅̇c̶̀̿i̷̅̿ȯ̵̅</span>
+        </div>
+        <div class="data-readout__item">
+          <span class="data-readout__label text-corrupted">F̷i̶n̴a̴l̷ ̶I̸I̸I̸</span>
+          <span class="data-readout__value text-corrupted"
+            style="font-size:1.2rem; font-family:var(--font-display); font-style:italic; color:var(--clr-red);">D̷̃͗e̶̿̓s̵͑͆t̶͊̎r̶̛͒ù̴͝c̸̓̕c̷̓̈́i̵̅͌ó̵̍͘n̵̋̚</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 LIMINAL — Todos los derechos reservados. Proyecto TFG.</p>
+  </footer>
+
+
+  <!-- ============================================================
+       FOREGROUND PARALLAX LAYERS — mecanicas.html
+  ============================================================ -->
+  <div class="fg-layer fg-layer--placeholder" data-speed="-0.28" data-x="0vw" data-y="40vh"
+    data-size="clamp(140px,16vw,240px)" data-opacity="0.45" data-blend="screen"
+    data-label="Efecto izquierda&#xA;mecánicas">
+    <!-- <img src="img/fg-glitch-left.png" alt=""> -->
+  </div>
+  <div class="fg-layer fg-layer--placeholder" data-speed="0.25" data-x="calc(100vw - clamp(140px,18vw,260px) - 1vw)"
+    data-y="60vh" data-size="clamp(140px,18vw,260px)" data-opacity="0.4" data-blend="screen"
+    data-label="Efecto derecha&#xA;mecánicas">
+    <!-- <img src="img/fg-static-right.png" alt=""> -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
